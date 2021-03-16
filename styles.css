@@ -1,1 +1,57 @@
 /*Maak hier jouw CSS!*/
+
+.grid-container {
+    background-color: antiquewhite;
+    display: grid;
+    column-gap: 16px;
+    row-gap: 16px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px 240px 100px auto 50px;
+    grid-template-areas:
+    "item-a item-c item-c"
+    "item-b item-c item-c"
+    "item-b item-e item-d"
+    "item-b item-e ."
+    "item-f item-f item-f";
+}
+
+.grid-item {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#item-a {
+    background-color: darkred;
+    grid-area: item-a;
+}
+
+#item-b {
+    background-color: deeppink;
+    grid-area: item-b;
+    text-align: center;
+}
+
+#item-c {
+    background-color: orange;
+    grid-area: item-c;
+}
+
+#item-d {
+    background-color: purple;
+    grid-area: item-d;
+}
+
+#item-e {
+    background-color: yellow;
+    grid-area: item-e;
+}
+
+#item-f {
+    background-color: green;
+    grid-area: item-f;
+}
+
+
+
