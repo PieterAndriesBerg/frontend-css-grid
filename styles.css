@@ -1,5 +1,5 @@
 /*Maak hier jouw CSS!*/
-
+/* Dit is de CSS voor Mobiel <- kleiner dan 576px */
 .grid-container {
     background-color: antiquewhite;
     display: grid;
@@ -17,11 +17,11 @@
             "item-f";
 
 }
-
+/* Alles groter dan mobiel staat hierin! */
 @media screen and (min-width: 576px) {
     .grid-container {
 
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50px 240px 100px auto 50px;
         grid-template-areas:
         "item-a item-c item-c"
